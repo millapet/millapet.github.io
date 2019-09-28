@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<title>Petra Millarová</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+	<script src="js_map/locations.geojson" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<body>
+
+<!-- Sidebar with MAP -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small w3-black" style="width:40%">
+  <div id="mapid" style= "width: 100%; height: 100%" ></div>
+	<script src="js_map/map.js"></script>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+  <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Top</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+	 <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolilo</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Skills</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-black w3-text-light-grey w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+  <img src="files/photo.png" style="width:20%">
+    <h1 class="w3-jumbo"><b>Petra Millarová</b></h1>
+	 <div class="w3-container w3-center w3-opacity w3-xxlarge" >
+	 <a href="https://github.com/millapet" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+	 <a href="https://www.linkedin.com/in/petra-millarova" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/petramariem/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/PetraMarieM1" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  </div>
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <a href="https://github.com/millapet/CV/blob/master/PetraMillarova-CV.pdf" targer="_blank"><i class="fa fa-download"></i> Download Resume</a>
+    </button>
+  </header>
+  
+    <!-- About Section -->
+  <div class="w3-content w3-justify w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>I am a software developer with 2 years' work experience in C++ and interest in map making, web apps and all things geospatial. Ever since I was a child I loved drawing maps and making plans. I started my programming journey at 15 when I signed up for Python seminars at school. </p> 
+	 <p> It only made sense to combine these two and study Geodesy, Cartography and Geomatics at University, choosing Geomatics for my Master's degree afterwards. I took extra courses titled <i>Design and Analysis of Algorithms, Computer Networks </i> and <i>Informatics 4</i>. I took the course on <i>Algorithms in Digital Cartography</i> a year early because I was eager to better my programming skills.  </p>
+	 <p> I live for the highs when everything works and the lows motivate me to be better at what I do. I have now decided to set off on an andventure and am currently in Canada on an open work permit. I am very fortunate in that I can combine the two things I am most passionate about in what I do for a living - coding and spatial data!
+    </p>
+	 
+	 <div class="w3-content w3-justify w3-padding-32" id="education">
+    <h3>Education</h3>
+	 
+	 <ul style="list-style-type:none;">
+  <li><i>Master's degree</i> - 2019 - Geomatics at Czech Technical University in Prague</li>
+		<ul style="list-style-type:square;">
+		<li> Postgraduate thesis: Combinatorial computation of coordinates in the GNU Gama project </li>
+		</ul>
+		<br>
+  <li><i>Bachelor's degree</i> - 2017 - Geodesy, Cartography and Geoinformatics at Czech Technical University in Prague </li>
+  <ul style="list-style-type:square;">
+		<li> Undergraduate thesis: Smoothing of spectrometric data </li>
+		</ul>
+</ul>
+	   <!-- End Education Section -->
+  </div>
+	 	   <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2>Portfolio</h2>
+    <hr class="w3-opacity">
+	 
+	 <h3>Admin of GNU Gama</h3>
+	 <p>I have the absolute pleasure to be one of the admins for the <a href="https://www.gnu.org/software/gama/" target="_blank">GNU Gama</a> project lead by prof. Ing. Aleš Čepek, CSc. GNU Gama is a set of programs for computation and adjustment of geodetic networks. I became familiar with the project while working on my postgraduate thesis (see below) and decided to continue contributing to the project even after completing my degree. As an admin I can release new versions, push changes to the main repository and am responsible for the Windows binaries for the project. </p>
+	 
+	 <h3>Postgraduate thesis</h3>
+	 <p>
+	 <b><a href="https://dspace.cvut.cz/handle/10467/83570" target="_blank">Combinatorial computation of coordinates in the GNU Gama project</a></b> - In the thesis I proposed and implemented new methods of calculating approximate coordinates in a way that fixed the existing computation of long traverses and helped eliminate calculation with measurements containing gross errors. The code found its way into the official release of <a href="https://www.gnu.org/software/gama/" target="_blank">GNU Gama</a> v2.05. Below is a visual sample of what I have fixed - <i>before</i> is red and <i>after</i> is green!
+	 </p>
+	 <img src="files/gnu-gama.png" style="width:100% scale=70%">
+	 
+	 <h3>Prague Microbreweries</h3>
+	 <p>This is a map showing the user's location and the location of Prague's microbreweries, along with additional information about them. This was a fun little project to learn about Leaflet, Mapbox and JacaScript.</p>
+	 <a href="https://millapet.github.io/PragueMicrobreweries/" target="_blank"><img src="files/microbreweries.png" style="width:100%" class="w3-hover-opacity"></a>
+	 
+	 <h3>Undergraduate thesis</h3>
+	 <p>
+	 <b><a href="https://dspace.cvut.cz/handle/10467/68743" target="_blank">Smoothing of spectrometric data</a></b> - A console application that takes spectrometric data in xml format as input and outputs their smoothed coordinates according to the parameters that were set. The data was then used for research of recognition of different materials according to their spectrometry.
+	 </p>
+	 
+  <!-- End Portfolio Section -->
+  </div>
+  
+  <div class="w3-content w3-justify w3-padding-32" id="skills">
+    <h2>Skills</h2>
+	 <hr class="w3-opacity">
+	 <h3>Programming</h3>
+    <p class>C++</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-grey" style="width:80%"></div>
+    </div>
+	     <p class>Python</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-grey" style="width:50%"></div>
+    </div><br>
+    <p class>JavaScript</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-grey" style="width:30%"></div>
+    </div>	 
+	 <br>
+	 
+	 <h3>Geospatial</h3>
+	 	 	 <p class>Mapnik C++ library</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-grey" style="width:80%"></div>
+    </div><br>
+	 <p class=>QGIS</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-grey" style="width:70%"></div>
+    </div><br>
+	 <p class>ArcGIS</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-grey" style="width:60%"></div>
+    </div><br>
+	 <p class=>Leaflet JavaScript library</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-grey" style="width:50%"></div>
+    </div>
+	 <br>
+	 <p>I am also used to working with the following (in no particular order): spatial databases, XML, MS Visual Studio 2017, CMake and the boost C++ libraries, SVN and Git.</p>
+	 <br>
+
+	 <!--h3>Languages</h3>
+	 <p class>English</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:99%"></div>
+    </div><br>
+	 <p class>Czech</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:99%"></div>
+    </div><br>
+	 <p class>German</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:30%"></div>
+    </div><br>
+	 <p class>Russian</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:20%"></div>
+    </div><br-->
+	 	   <!-- End Skills Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content" id="contact" style="margin-bottom:64px">
+    <h2>Contact</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <!--p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Toronto, ON</p-->
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> TBA</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> petramillarova@gmail.com</p>
+    </div>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" >
+<a href="https://github.com/millapet" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+	 <a href="https://www.linkedin.com/in/petra-millarova" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/petramariem/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/PetraMarieM1" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

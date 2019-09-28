@@ -1,0 +1,35 @@
+var locations = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Toronto",
+        "text": "Currently available here!",
+        "id": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.398193359375,
+          43.67780454967293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Czech Technical University in Prague",
+        "text": "Master's degree in Geomatics",
+        "id": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.388109445571901,
+          50.10403112057821
+        ]
+      }
+    }
+  ]
+}
