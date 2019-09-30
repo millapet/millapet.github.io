@@ -7,6 +7,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: Geneva, sans-serif; font-display: auto}
   min-height: 100%;
 }
 
+#mapid {
+    background-color: #111111;
+}
+
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
   background-color: #000;
   color: lightgray;

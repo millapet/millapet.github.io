@@ -1,7 +1,7 @@
-var mymap = L.map('mapid').setView([30, -40], 2);
+var mymap = L.map('mapid').setView([5, -40], 2);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a> | <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a> | Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> | Icons &copy; <a target="_blank" href="https://icons8.com/icons">Icons8</a>',
+	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a> | <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a> | Imagery &copy; <a href="https://www.mapbox.com/" target="_blank">Mapbox</a> | Icons &copy; <a target="_blank" href="https://icons8.com/icons" target="_blank">Icons8</a>',
 	maxZoom: 18,
 	id: 'mapbox.dark',
 	accessToken: 'pk.eyJ1IjoibWlsbGFwZXQiLCJhIjoiY2pycGRqNHYzMTl4MDN6cGpyZGpsYjRybyJ9.IWzPKinWNt-NvEGxkiJ97g'
@@ -52,7 +52,7 @@ var centerControl = L.Control.extend({
 	ccontainer.style.cursor = 'pointer';
 	
     ccontainer.onclick = function(){
-		mymap.setView([30, -40], 2);
+		mymap.setView([5, -40], 2);
       console.log('buttonClicked');
     }
 	ccontainer.onmouseover = function(){
