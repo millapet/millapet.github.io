@@ -16,10 +16,10 @@
 <body>
 
 <!-- Sidebar with MAP -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+<!--nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
   <div id="mapid" style= "width: 100%; height: 100%" ></div>
 	<script src="js_map/map.js"></script>
-</nav>
+</nav-->
 
 <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
 <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
@@ -36,7 +36,7 @@
 </nav>
 
 <!-- Page Content -->
-<div class="w3-main w3-black w3-text-light-grey w3-padding-large" style="margin-left:40%">
+<div class="w3-main w3-black w3-text-light-grey w3-padding-large">
 
   <!-- Menu icon to open sidebar -->
   <span class="w3-button w3-top w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
@@ -52,7 +52,7 @@
     <a href="https://twitter.com/PetraMarieM1" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
   </div>
     <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-      <i class="fa fa-download"></i> <a href="https://github.com/millapet/CV/blob/master/PetraMillarova-CV.pdf" targer="_blank">Download CV</a>
+      <i class="fa fa-download"></i> <a href="https://github.com/millapet/CV/blob/master/PetraMillarova-CV.pdf" target="_blank">Download CV</a>
     </button>
   </header>
   
@@ -175,8 +175,8 @@
     <hr class="w3-opacity">
 
     <div class="w3-section">
-      <!--p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Toronto, ON</p-->
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> TBA</p>
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Toronto, ON</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +1 (647) 614-3145</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> petramillarova@gmail.com</p>
     </div>
   <!-- End Contact Section -->
@@ -198,7 +198,7 @@
 <script>
 // Open and close sidebar
 function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.width = "100%";
   document.getElementById("mySidebar").style.display = "block";
 }
 
